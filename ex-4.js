@@ -8,11 +8,10 @@ const todos = [
 
 function getCompletedTodo(todos) {
   // Start coding here
-  return todos.completed === true
+  return todos.filter((todos) => todos.completed)
 }
 
-let result = todos.filter(getCompletedTodo);
-console.log(result);
+console.log(getCompletedTodo(todos));
 
 /* 
 	Output:
